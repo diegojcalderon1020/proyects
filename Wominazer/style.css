@@ -1,0 +1,114 @@
+
+      .search-box {
+      background-color: #eee;
+      padding: 8px 15px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      width: 300px;
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      margin-left: 10px;
+      outline: none;
+      width: 100%;
+    }
+
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+.sidebar {
+  background-color: #fff;
+  height: 100vh;
+  padding: 20px 0;
+  box-shadow: 1px 0 1px rgb(0 0 0 / 43%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  color: #e60023; /* Color Pinterest */
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+/* Lista del menú */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.menu li a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.menu li a:hover {
+  background-color: #eee;
+  border-left: 4px solid #e60023;
+  padding-left: 16px;
+}
+
+/* barra de buscador */
+
+#search {
+  padding: 5px;
+  border-radius: 5px;
+  width: 50%;
+  margin: 10px 10px 10px 300px;
+  padding: 8px 8px 8px 32px;
+}
+
+.fa {
+    position: absolute;
+    top: 5%;
+    left: 24%;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+}
+
+.menu-flotante {
+    padding: 10%;
+    position: absolute;
+}
+.p-menu {
+    color: black;      
+    transition: color 0.3s; 
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+.p-menu:hover {
+  color: red;
+  text-decoration: underline;
+  background-color: #333;
+}
