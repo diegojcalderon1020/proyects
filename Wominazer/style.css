@@ -1,24 +1,6 @@
-.search-box {
-      background-color: #eee;
-      padding: 8px 15px;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      width: 300px;
-    }
-
-    .search-box input {
-      border: none;
-      background: transparent;
-      margin-left: 10px;
-      outline: none;
-      width: 100%;
-    }
-
-    body {
+body {
   margin: 0;
   font-family: Arial, sans-serif;
-  display: flex;
   background-color: #f9f9f9;
 }
 
@@ -110,15 +92,12 @@ header {
 .fa {
     position: absolute;
     top: 29px;
-    left: 297px;
     transform: scale(1.5);
     color: gray;
     pointer-events: none;
 }
-
-.menu-flotante {
-    padding: 10%;
-    position: absolute;
+#content {
+  padding: 6%;
 }
 .a-menu {
     color: black;      
