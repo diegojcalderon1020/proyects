@@ -1,5 +1,4 @@
-
-      .search-box {
+.search-box {
       background-color: #eee;
       padding: 8px 15px;
       border-radius: 20px;
@@ -75,22 +74,44 @@
   border-left: 4px solid #e60023;
   padding-left: 16px;
 }
-
+header {
+  margin-left: 90px; /* para que no se tape con el sidebar */
+  padding: 20px;
+}
 /* barra de buscador */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  padding: 8px 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
 
-#search {
-  padding: 5px;
-  border-radius: 5px;
-  width: 50%;
-  margin: 10px 10px 10px 300px;
-  padding: 8px 8px 8px 32px;
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  color: #e60023;
 }
 
 .fa {
     position: absolute;
-    top: 5%;
-    left: 24%;
-    transform: translateY(-50%);
+    top: 29px;
+    left: 297px;
+    transform: scale(1.5);
     color: gray;
     pointer-events: none;
 }
@@ -99,7 +120,7 @@
     padding: 10%;
     position: absolute;
 }
-.p-menu {
+.a-menu {
     color: black;      
     transition: color 0.3s; 
     cursor: pointer;
@@ -107,7 +128,7 @@
     display: inline-block;
     margin-right: 10px;
 }
-.p-menu:hover {
+.a-menu:hover {
   color: red;
   text-decoration: underline;
   background-color: #333;
