@@ -1,34 +1,42 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Pinterest</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-     <link rel="stylesheet" href="/Users/diego/Desktop/Wominazer/style.css">
+     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
- <nav class="sidebar">
-    <div class="logo">
-      <i class="fab fa-pinterest"></i>
-    </div>
-    <ul class="menu">
-      <li><a href="#"><i class="fas fa-home"></i></a></li>
-      <li><a href="#"><i class="fas fa-compass"></i></a></li>
-      <li><a href="#"><i class="fas fa-plus"></i></a></li>
-      <li><a href="#"><i class="fas fa-bell"></i></a></li>
-      <li><a href="#"><i class="fas fa-user"></i></a></li>
-      <li><a href="#"><i class="fas fa-cog"></i></a></li>
-    </ul>
+    <!--buscador-->
+      <header>
+        <form action="#" method="get" role="search" class="search-bar">
+          <label for="search" class="sr-only">Buscar</label>
+          <input id="search" type="search" name="q" placeholder="Buscar" aria-label="Buscar">
+          <button type="submit" aria-label="Buscar">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+  </header> 
+
+    <!--menu flotante-->
+        <nav class="sidebar">
+          <div class="logo">
+              <i class="fab fa-pinterest"></i>
+          </div>
+            <ul class="menu">
+              <li><a aria-label="inicio"href="#"><i class="fas fa-home" aria-hidden="true"></i></a></li>
+              <li><a aria-label="explorar"href="#"><i class="fas fa-compass" aria-hidden="true"></i></a></li>
+              <li><a aria-label="crear"href="#"><i class="fas fa-plus" aria-hidden="true"></i></a></li>
+              <li><a aria-label="notificaciones"href="#"><i class="fas fa-bell" aria-hidden="true"></i></a></li>
+              <li><a aria-label="perfil"href="#"><i class="fas fa-user" aria-hidden="true"></i></a></li>
+              <li><a aria-label="configuracion"href="#"><i class="fas fa-cog" aria-hidden="true"></i></a></li>
+          </ul>
   </nav>
-    <div>
-      <input id="search" type="search" name="q" placeholder="Buscar" aria-label="Buscar" />
-        <i class="fa fa-search"></i>
-    </div>  
     <div class="menu-flotante">
-      <p href="#" class="p-menu">Todas</p>
-      <p href="#" class="p-menu">Imágenes</p>
-      <p href="#" class="p-menu">Relacionados</p>
+      <a href="#" class="p-menu">Todas</a>
+      <a href="#" class="p-menu">Imágenes</a>
+      <a href="#" class="p-menu">Relacionados</a>
     </div>
     
 </body>
